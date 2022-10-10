@@ -62,6 +62,27 @@ const anotherList = list.concat(2);
 console.log(anotherList);
 
 
+// ------- Objetos
+
+const persona = {
+  name: 'orlando',
+  lastName: 'Valenc',
+  twitter: '@nicovale',
+  edad: 28,
+  isDeveloper: true
+}
+
+// accedemos por notación de punto: 
+const CompleteName = `${persona.name} ${persona.lastName}`;
+console.log(CompleteName);
+
+const field = 'twitter';
+console.log(persona[field]); // esto eqivale a persona.twitter
+// output : @nicovale
+
+
+
+
 
 
 
