@@ -1,9 +1,14 @@
 import './App.css';
 
 function App() {
+  const mensaje = 'Hola Mundo desde variable'
+  const a = 2
+  const b = 3
   return (
     <div className="App">
-      Hola Mundo
+      {mensaje}
+      <br />
+      {a + b}
     </div>
   );
 }
