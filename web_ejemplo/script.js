@@ -82,7 +82,38 @@ console.log(persona[field]); // esto eqivale a persona.twitter
 
 
 
+//----- funciones 
+
+//Reciben parámetros y al darles valor se convierten en argumentos de esa función
+
+// las funciones "son ciudadanos de primera clase"
 
 
+//function expression
+const sumar = (operando1, operando2) => { 
+  console.log(operando1)
+  console.log(operando2)
+  return operando1 + operando2
+}
+
+// con funciones expresivas no tenemos problemas de hoisting
+
+console.log(sumar(2, 6)); 
+
+// se pueden mandar también variable como parámetros:
+let num1 = 4; 
+let num2 = 8; 
+
+console.log(sumar(num1, num2));
+
+//Declarative function
+function restar(a, b) {
+  return a - b
+}
+
+restar(10, 5); 
+// esta función se puede llavar desde la línea 1 ya que Javascript aplica Hoisting
+
+console.log(restar(8, 4));
 
 
