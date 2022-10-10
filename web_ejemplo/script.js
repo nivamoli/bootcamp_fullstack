@@ -21,3 +21,47 @@ console.log(firstName);
 }
 
 console.log(scope2); // undefined
+
+
+// ------- Tipos de datos primitivos
+
+// son inmutables
+
+let numb = 1;
+let str = 'Hola';
+let bool = true || false; 
+let und = undefined; 
+let nl = null; 
+
+//no son tan importantes:
+let Bent = BigInt;
+let smb = Symbol; 
+
+// mutables
+
+let obj = Object;
+let arr = Array; 
+
+
+// todo en JS es un objeto
+const firstName2 = 'Miguel'; 
+// ya podemos acceder a varios metodos como: 
+const firstNameToUpperCase = firstName2.toUpperCase(); // no funciona porque el tipo string no se puede mutar. 
+// No se puede modificar un string. Se pueden crear otros strings a partir de uno. 
+console.log(firstNameToUpperCase); // ahora si el string me lo devuelve en mayúscula porque creó uno nuevo a partir de otro. 
+
+
+const list = []; // con const no se puede reasignar pero su valor si puede cambiar
+list.push(1); // aquí el valor del array ha cambiado (Ha mutado/cambiado su valor)
+console.log(list);
+
+console.log(list[0]); // Para acceder al primer elemento siempre se accede desde el Cero. 
+
+// para hacer arrays inmutables creamos uno nuevo a partir de otro: 
+const anotherList = list.concat(2);
+console.log(anotherList);
+
+
+
+
+
