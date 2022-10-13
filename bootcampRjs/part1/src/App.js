@@ -1,14 +1,18 @@
 import './App.css';
+import Mensaje from './Mensaje';
+
+const Description = () => {
+  return <p>Este es el curso de fullStack</p>
+}
+
 
 function App() {
-  const mensaje = 'Hola Mundo desde variable'
-  const a = 2
-  const b = 3
   return (
     <div className="App">
-      {mensaje}
-      <br />
-      {a + b}
+      <Mensaje color='green' message='Estamos trabajando'/>
+      <Mensaje color='red' message='En un curso'/>
+      <Mensaje color='blue' message='De react'/>
+      <Description/>
     </div>
   );
 }
